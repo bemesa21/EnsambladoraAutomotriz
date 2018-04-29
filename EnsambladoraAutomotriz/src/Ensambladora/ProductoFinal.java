@@ -10,5 +10,15 @@ package Ensambladora;
  * @author bere
  */
 public class ProductoFinal {
+    protected static int numProducto = 0;
+    protected int id;
+    protected Pieza[] arrPiezas;
+
+    public ProductoFinal() {
+        arrPiezas= new Pieza[4];
+        numProducto++;
+        id=numProducto;
+    }
+    
     
 }

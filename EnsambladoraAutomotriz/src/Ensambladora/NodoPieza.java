@@ -26,5 +26,9 @@ class NodoPieza {
     public void SetSiguiente(NodoPieza siguiente) {
 	this.siguiente = siguiente;
     }
+
+    public Pieza getNodoPieza() {
+        return nodoPieza;
+    }
 	 
 }

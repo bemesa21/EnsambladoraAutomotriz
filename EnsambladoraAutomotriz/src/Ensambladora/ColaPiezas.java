@@ -19,7 +19,7 @@ class ColaPiezas {
    }
  
 
-   public void InsertarAlFinal(Pieza p){
+   public synchronized void InsertarAlFinal(Pieza p){
       NodoPieza n = new NodoPieza(p);
    
       if (tail == null)
@@ -28,10 +28,11 @@ class ColaPiezas {
          tail.SetSiguiente(n);
          tail=n;
       }
+      notifyAll();
    }
 
 	
-   public NodoPieza Borrar() {
+   public synchronized NodoPieza Borrar() {
       NodoPieza aux =head;
       if (head==null)
          System.out.println("\nLista vacia....");
@@ -39,7 +40,9 @@ class ColaPiezas {
          head=tail=null;
       else 
          head = head.GetSiguiente();
+      notifyAll();
       return aux;
+      
    }
 		
 		

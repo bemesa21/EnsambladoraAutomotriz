@@ -13,11 +13,8 @@ import java.util.logging.Logger;
  * @author bere
  */
 public class HiloGeneradorPiezas extends Thread{
-    private static String [] colores = {"rojo","verde","Azul","Gris"};
     private ColaPiezas cola;
     private int numPiezas;
-
-
     public HiloGeneradorPiezas(String name, int numPiezas, ColaPiezas cola) {
         super(name);
         this.numPiezas = numPiezas;
@@ -50,8 +47,7 @@ public class HiloGeneradorPiezas extends Thread{
                 break;
             }
             for(int i = 1; i <= numPiezas; i++){
-                cola.InsertarAlFinal(new Pieza(getName()+i,HiloGeneradorPiezas.colores[i-1], descripcion));
-                System.out.println(getName() + " Metiendo "  + getName()+" "+i );
+                cola.insertarAlFinal(getName(),new Pieza(getName()+i, descripcion));
             }
             try {
                 sleep(tiempoEspera);

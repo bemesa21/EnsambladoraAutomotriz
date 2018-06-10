@@ -5,20 +5,36 @@
  */
 package Ensambladora;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author bere
  */
 public class ProductoFinal {
-    protected static int numProducto = 0;
-    protected int id;
-    protected Pieza[] arrPiezas;
+    protected static int numProducto = 1;
+    protected String id;
+    protected ArrayList<Pieza> arrPiezas;
 
-    public ProductoFinal() {
-        arrPiezas= new Pieza[4];
+    public ProductoFinal(String id) {
+        arrPiezas = new ArrayList<Pieza>();
+        this.id=id;
         numProducto++;
-        id=numProducto;
+
+    }
+
+    public String getId() {
+        return id;
     }
     
+    public void insertarPieza(Pieza p){
+        arrPiezas.add(p);
+    }
     
+    public void listarPiezas(){
+        for(Pieza p : arrPiezas){
+            System.out.print("["+p.getId() + "]  ");
+        }
+        System.out.println("\n");
+    }
 }

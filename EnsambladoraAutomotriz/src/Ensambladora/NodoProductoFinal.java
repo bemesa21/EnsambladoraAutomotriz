@@ -25,6 +25,10 @@ public class NodoProductoFinal {
     public NodoProductoFinal getSiguiente() {
         return siguiente;
     }
+
+    public ProductoFinal getProducto() {
+        return producto;
+    }
     
     
     

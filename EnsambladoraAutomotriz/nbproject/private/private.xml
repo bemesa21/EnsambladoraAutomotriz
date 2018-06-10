@@ -3,9 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/home/bere/NetBeansProjects/EnsambladoraAutomotriz/src/Ensambladora/ColaProductos.java</file>
+            <file>file:/home/bere/NetBeansProjects/EnsambladoraAutomotriz/src/Ensambladora/HiloPintor.java</file>
+            <file>file:/home/bere/NetBeansProjects/EnsambladoraAutomotriz/src/Ensambladora/ProductoFinal.java</file>
             <file>file:/home/bere/NetBeansProjects/EnsambladoraAutomotriz/src/Ensambladora/ColaPiezas.java</file>
-            <file>file:/home/bere/NetBeansProjects/EnsambladoraAutomotriz/src/Ensambladora/HiloGeneradorPiezas.java</file>
             <file>file:/home/bere/NetBeansProjects/EnsambladoraAutomotriz/src/Ensambladora/Prueba.java</file>
+            <file>file:/home/bere/NetBeansProjects/EnsambladoraAutomotriz/src/Ensambladora/HiloGeneradorPiezas.java</file>
+            <file>file:/home/bere/NetBeansProjects/EnsambladoraAutomotriz/src/Ensambladora/HiloEnsamblador.java</file>
+            <file>file:/home/bere/NetBeansProjects/EnsambladoraAutomotriz/src/Ensambladora/ColaProduccion.java</file>
+            <file>file:/home/bere/NetBeansProjects/EnsambladoraAutomotriz/src/Ensambladora/Pieza.java</file>
         </group>
     </open-files>
 </project-private>

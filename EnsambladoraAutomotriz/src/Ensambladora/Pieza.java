@@ -14,19 +14,21 @@ public class Pieza{
 	private String color;
 	private String descripcion;
 
-	public Pieza(String id, String color, String descripcion){
+        public Pieza(){
+            
+        }
+	public Pieza(String id,String descripcion){
 		this.id=id;
-		this.color=color;
 		this.descripcion=descripcion;
 	}
 
-	public String getIdPieza(){
-		return id;
-	}
-
-	public void setidPieza(String id){
-		this.id=id;
-	}
+    public String getId() {
+        return id;
+    }
+    
+    public int getNumber(){
+        return Integer.parseInt(id.substring(1));
+    }
 
 	public String getColor(){
 		return color;
@@ -34,15 +36,5 @@ public class Pieza{
 
 	public void setColor(String descripcion){
 		this.color=color;
-	}
-
-	public String getDescripcion(){
-		return descripcion;
-	}
-
-	public void setDescripcion(String descripcion){
-		this.descripcion=descripcion;
-	}
-
-	
+	}	
 }
